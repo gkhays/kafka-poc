@@ -15,7 +15,16 @@ https://github.com/lensesio/fast-data-dev
 ### Docker
 
 ```
-docker-compose up -d
+$ docker-compose up -d
+Creating network "kafka-poc_default" with the default driver
+Creating kafka-poc_broker_1 ... done
+```
+
+```
+$ docker-compose down
+Stopping kafka-poc_broker_1 ... done
+Removing kafka-poc_broker_1 ... done
+Removing network kafka-poc_default
 ```
 
 ### Coyote Tests
