@@ -8,7 +8,7 @@ There is a live version of the `fast-data-dev` image at the following location:
 
 https://fast-data-dev.demo.landoop.com/
 
-The organization has changed its name from Landoop to LensesIO. The images is here:
+The organization has changed its name from Landoop to LensesIO. The image is here:
 
 https://github.com/lensesio/fast-data-dev
 
