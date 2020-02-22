@@ -51,6 +51,20 @@ $ curl -vs --stderr - "http://localhost:8082/topics"
 ["_schemas","backblaze_smart","connect-configs","connect-offsets","connect-statuses","coyote-test-avro","coyote-test-binary","coyote-test-json","logs_broker","nyc_yellow_taxi_trip_data","sea_vessel_position_reports","telecom_italia_data","telecom_italia_grid"]* Connection #0 to host localhost left intact
 ```
 
+### Command Line Utilities
+
+Create a topic.
+
+```
+kafka-topics --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test
+```
+
+Write some messages to the topic.
+
+```
+kafka-console-producer --broker-list localhost:9092 --topic test
+```
+
 ## References
 
 1. [Getting started with kafka](https://success.docker.com/article/getting-started-with-kafka)
